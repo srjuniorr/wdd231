@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Junior Dias</title>
+    <title>WDD 231 - Web Frontend Development I - Flavio Dias Junior</title>
+    <meta name="description" content="WDD 231 course home page for Flavio Dias Junior. Shows the courses of the Web and Computer Programming certificate at BYU-Pathway Worldwide.">
+    <meta name="author" content="Flavio Dias Martins Junior">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231 - Web Frontend Development I</h1>
-    <p>Junior Dias - BYU-Pathway Worldwide</p>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.svg" alt="site logo" width="48" height="48">
+            <span>Flavio Dias Junior</span>
+        </div>
+        <button id="menu" aria-label="Open the menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="grid-top">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>
+                    Hello! My name is Flavio Dias Martins Junior but everyone calls me Junior.
+                    I live in Brazil and I am a student at BYU-Pathway Worldwide working on the
+                    Software Development degree. I started with the Web and Computer Programming
+                    certificate and I am enjoying learning how websites are built. When I am not
+                    studying I like to spend time with my family, listen to music and learn new
+                    things about technology. My goal is to work as a web developer and build
+                    useful things for people.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.svg" alt="photo of Flavio Dias Junior" width="300" height="300" class="profile">
+            </section>
+        </div>
+
+        <section class="card certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="allBtn" class="filter active-filter">All</button>
+                <button id="cseBtn" class="filter">CSE</button>
+                <button id="wddBtn" class="filter">WDD</button>
+            </div>
+            <div id="courseCards" class="courses"></div>
+            <p id="credits" class="credits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/srjuniorr" target="_blank" rel="noopener">
+                <img src="images/github.svg" alt="github icon" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="linkedin icon" width="32" height="32">
+            </a>
+            <a href="https://www.byupathway.edu" target="_blank" rel="noopener">
+                <img src="images/school.svg" alt="byu pathway icon" width="32" height="32">
+            </a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> &bull; Flavio Dias Martins Junior &bull; Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

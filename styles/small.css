@@ -1,0 +1,209 @@
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #2f6690;
+    --light-color: #f5f7fa;
+    --card-color: #e8edf4;
+    --text-color: #222222;
+    --font: "Nunito", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text-color);
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-box span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* navigation - closed by default on phones */
+nav {
+    background-color: var(--secondary-color);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* wayfinding: shows the current page */
+.navigation a.active {
+    background-color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* main */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.card p {
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+.card .profile {
+    display: block;
+    margin: 1rem auto;
+    width: 65%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* course filter buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter {
+    font-family: var(--font);
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-color: var(--card-color);
+}
+
+.filter.active-filter {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* course cards */
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.course-card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 0.6rem;
+    text-align: center;
+    background-color: var(--card-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* completed courses look different */
+.course-card.completed {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+.credits {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social img {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 2px;
+}

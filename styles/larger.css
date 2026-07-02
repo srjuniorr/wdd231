@@ -1,0 +1,48 @@
+/* styles for bigger screens */
+
+@media (min-width: 640px) {
+
+    /* hide the hamburger and show the menu in a row */
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* about me and photo side by side */
+    .grid-top {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .card .profile {
+        width: 80%;
+    }
+
+    /* courses in two columns */
+    .courses {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .course-card {
+        flex: 1 1 40%;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    /* three courses per row on wide screens */
+    .course-card {
+        flex: 1 1 30%;
+    }
+}
