@@ -1,0 +1,620 @@
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #2f6690;
+    --accent-color: #ffd166;
+    --light-color: #f5f7fa;
+    --card-color: #e8edf4;
+    --text-color: #222222;
+    --font: "Nunito", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text-color);
+    background-color: #ffffff;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-box img {
+    width: 44px;
+    height: 44px;
+}
+
+.logo-box .site-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* navigation */
+nav {
+    background-color: var(--secondary-color);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.navigation a.active {
+    background-color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* main */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+/* hero on home page */
+.hero {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.hero .cta {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+}
+
+.hero .cta:hover {
+    background-color: #ffffff;
+}
+
+/* home page sections */
+.home-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.home-card {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.home-card h2 {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.home-card .card-body {
+    padding: 0.75rem 1rem;
+}
+
+.event {
+    border-bottom: 1px solid #dddddd;
+    padding: 0.5rem 0;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.event .event-date {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+/* weather */
+#weather-now {
+    text-align: center;
+}
+
+#weather-now .temp {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#weather-now .desc {
+    text-transform: capitalize;
+    margin: 0.2rem 0;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.forecast div {
+    background-color: var(--card-color);
+    border-radius: 4px;
+    padding: 0.5rem;
+    text-align: center;
+    flex: 1;
+}
+
+.forecast .day {
+    font-weight: 700;
+    display: block;
+}
+
+/* spotlights */
+.spotlights {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--light-color);
+}
+
+.spotlight img {
+    width: 180px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.spotlight h3 {
+    margin: 0.5rem 0 0.25rem;
+    color: var(--primary-color);
+}
+
+.spotlight p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.spotlight a {
+    color: var(--secondary-color);
+}
+
+.level-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.15rem 0.6rem;
+    border-radius: 10px;
+    margin-top: 0.4rem;
+}
+
+/* directory page */
+.view-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.view-buttons button {
+    font-family: var(--font);
+    font-size: 1rem;
+    padding: 0.4rem 1.2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.view-buttons button.active-view {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* members shown as grid of cards */
+.members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.members.grid section {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+.members.grid section img {
+    width: 160px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.members.grid section h3 {
+    margin: 0.5rem 0 0.25rem;
+    color: var(--primary-color);
+}
+
+.members.grid section p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.members.grid section a {
+    color: var(--secondary-color);
+    word-break: break-all;
+}
+
+/* members shown as a simple list */
+.members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.members.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+    padding: 0.6rem;
+    border-bottom: 1px solid #dddddd;
+}
+
+.members.list section:nth-child(even) {
+    background-color: var(--card-color);
+}
+
+.members.list section img {
+    display: none;
+}
+
+.members.list section h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.members.list section p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.members.list section .level-badge {
+    display: none;
+}
+
+/* join page form */
+.join-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+form.join-form {
+    background-color: var(--light-color);
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+form.join-form label {
+    display: block;
+    margin-bottom: 0.9rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+form.join-form input,
+form.join-form select,
+form.join-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-family: var(--font);
+    font-size: 1rem;
+}
+
+form.join-form input:required {
+    border-left: 4px solid var(--secondary-color);
+}
+
+form.join-form input:required:valid {
+    border-left: 4px solid #2d6a4f;
+}
+
+form.join-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+form.join-form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* membership cards */
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+.membership-cards h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.membership-card {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--light-color);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardIn 0.8s ease forwards;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes cardIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card h3 {
+    margin: 0 0 0.5rem;
+    color: var(--primary-color);
+}
+
+.membership-card button {
+    font-family: var(--font);
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+
+.membership-card button:hover {
+    background-color: var(--primary-color);
+}
+
+dialog {
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 1.2rem;
+    max-width: 450px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+dialog button.close-modal {
+    font-family: var(--font);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+
+/* thank you page */
+.thanks-box {
+    background-color: var(--light-color);
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.thanks-box p {
+    margin: 0.4rem 0;
+}
+
+.thanks-box .field-name {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* discover page */
+.visit-message {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }
+
+.discover-card {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card h2 {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem 0;
+}
+
+.discover-card p {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.discover-card button {
+    font-family: var(--font);
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem;
+    margin: 0 1rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.discover-card button:hover {
+    background-color: var(--primary-color);
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: var(--accent-color);
+}

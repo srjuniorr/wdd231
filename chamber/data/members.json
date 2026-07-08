@@ -1,0 +1,84 @@
+{
+    "members": [
+        {
+            "name": "Wasatch Coffee Roasters",
+            "address": "254 S Main St, Salt Lake City, UT",
+            "phone": "+1 801 555-4478",
+            "website": "https://wasatchcoffee.example.com",
+            "image": "wasatch-coffee.webp",
+            "membership": 3,
+            "category": "Restaurant",
+            "description": "Specialty coffee shop roasting beans locally in the Salt Lake valley."
+        },
+        {
+            "name": "Beehive Tech Solutions",
+            "address": "455 E 400 S, Salt Lake City, UT",
+            "phone": "+1 801 555-8890",
+            "website": "https://beehivetech.example.com",
+            "image": "beehive-tech.webp",
+            "membership": 3,
+            "category": "Technology",
+            "description": "Software development and IT consulting for small businesses."
+        },
+        {
+            "name": "Canyon Auto Repair",
+            "address": "1180 S State St, Salt Lake City, UT",
+            "phone": "+1 801 555-5561",
+            "website": "https://canyonauto.example.com",
+            "image": "canyon-auto.webp",
+            "membership": 1,
+            "category": "Automotive",
+            "description": "Complete car repair and maintenance services since 1998."
+        },
+        {
+            "name": "Sego Lily Garden Shop",
+            "address": "876 E 900 S, Salt Lake City, UT",
+            "phone": "+1 801 555-1044",
+            "website": "https://segolily.example.com",
+            "image": "sego-lily.webp",
+            "membership": 2,
+            "category": "Retail",
+            "description": "Plants, flowers and gardening supplies for home and events."
+        },
+        {
+            "name": "Foothill Books",
+            "address": "1414 Foothill Dr, Salt Lake City, UT",
+            "phone": "+1 801 555-7215",
+            "website": "https://foothillbooks.example.com",
+            "image": "foothill-books.webp",
+            "membership": 2,
+            "category": "Retail",
+            "description": "Independent bookstore with new and used titles."
+        },
+        {
+            "name": "Salt Lake Fitness Studio",
+            "address": "645 E 2100 S, Salt Lake City, UT",
+            "phone": "+1 801 555-9930",
+            "website": "https://slcfitness.example.com",
+            "image": "slc-fitness.webp",
+            "membership": 1,
+            "category": "Health",
+            "description": "Group classes, personal training and indoor cycling."
+        },
+        {
+            "name": "Great Salt Grill",
+            "address": "340 W Pierpont Ave, Salt Lake City, UT",
+            "phone": "+1 801 555-2287",
+            "website": "https://greatsaltgrill.example.com",
+            "image": "great-salt-grill.webp",
+            "membership": 3,
+            "category": "Restaurant",
+            "description": "American grill with local ingredients and a mountain view patio."
+        },
+        {
+            "name": "Utah Solar Energy",
+            "address": "2895 S West Temple, Salt Lake City, UT",
+            "phone": "+1 801 555-6605",
+            "website": "https://utahsolar.example.com",
+            "image": "utah-solar.webp",
+            "membership": 2,
+            "category": "Services",
+            "description": "Residential and commercial solar panel installation."
+        }
+    ]
+}
