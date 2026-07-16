@@ -107,6 +107,144 @@ h2 {
     color: var(--primary-color);
 }
 
+/* hero on home page */
+.hero {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.hero .cta {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+}
+
+.hero .cta:hover {
+    background-color: #ffffff;
+}
+
+/* home page sections */
+.home-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.home-card {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.home-card h2 {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.home-card .card-body {
+    padding: 0.75rem 1rem;
+}
+
+.event {
+    border-bottom: 1px solid #dddddd;
+    padding: 0.5rem 0;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.event .event-date {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+/* weather */
+#weather-now {
+    text-align: center;
+}
+
+#weather-now .temp {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#weather-now .desc {
+    text-transform: capitalize;
+    margin: 0.2rem 0;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.forecast div {
+    background-color: var(--card-color);
+    border-radius: 4px;
+    padding: 0.5rem;
+    text-align: center;
+    flex: 1;
+}
+
+.forecast .day {
+    font-weight: 700;
+    display: block;
+}
+
+/* spotlights */
+.spotlights {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--light-color);
+}
+
+.spotlight img {
+    width: 180px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.spotlight h3 {
+    margin: 0.5rem 0 0.25rem;
+    color: var(--primary-color);
+}
+
+.spotlight p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.spotlight a {
+    color: var(--secondary-color);
+}
+
 /* directory page */
 .view-buttons {
     display: flex;

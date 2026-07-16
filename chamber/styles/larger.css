@@ -19,6 +19,21 @@
         font-size: 1.3rem;
     }
 
+    /* home */
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .home-grid .events-card {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 1 / 3;
+    }
+
     /* directory */
     .members.grid {
         grid-template-columns: repeat(2, 1fr);
