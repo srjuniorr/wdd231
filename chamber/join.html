@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Salt Lake City Chamber of Commerce</title>
+    <meta name="description" content="Join the Salt Lake City Chamber of Commerce. Fill the membership application form and choose between NP, Bronze, Silver and Gold levels.">
+    <meta name="author" content="Flavio Dias Martins Junior">
+    <meta property="og:title" content="Join - Salt Lake City Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Salt Lake City Chamber of Commerce.">
+    <meta property="og:image" content="https://srjuniorr.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://srjuniorr.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/favicon.svg" alt="chamber logo" width="44" height="44">
+            <span class="site-name">Salt Lake City<br>Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open the menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="join-grid">
+            <form class="join-form" method="get" action="thankyou.html">
+                <label>First Name
+                    <input type="text" name="firstname" title="Your first name" autocomplete="given-name" required>
+                </label>
+
+                <label>Last Name
+                    <input type="text" name="lastname" title="Your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>Organizational Title
+                    <input type="text" name="orgtitle" title="Your title inside your organization" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" placeholder="e.g. General Manager">
+                </label>
+
+                <label>Email
+                    <input type="email" name="email" title="Your email address" autocomplete="email" placeholder="someone@example.com" required>
+                </label>
+
+                <label>Mobile Phone
+                    <input type="tel" name="phone" title="Your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>Business/Organization Name
+                    <input type="text" name="organization" title="Name of your business or organization" autocomplete="organization" required>
+                </label>
+
+                <label>Membership Level
+                    <select name="membership" title="Choose a membership level">
+                        <option value="np">NP Membership (non profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Describe your Business
+                    <textarea name="description" title="Short description of your organization" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Send Application">
+            </form>
+
+            <div class="membership-cards">
+                <h2>Membership Levels</h2>
+                <section class="membership-card">
+                    <h3>NP Membership</h3>
+                    <p>For non profit organizations - no fee</p>
+                    <button data-modal="npModal">Learn More</button>
+                </section>
+
+                <section class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <p>For small businesses starting out</p>
+                    <button data-modal="bronzeModal">Learn More</button>
+                </section>
+
+                <section class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <p>For growing companies</p>
+                    <button data-modal="silverModal">Learn More</button>
+                </section>
+
+                <section class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <p>Our complete package</p>
+                    <button data-modal="goldModal">Learn More</button>
+                </section>
+            </div>
+        </div>
+
+        <dialog id="npModal">
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>Free for non profit organizations</li>
+                <li>Listing in the business directory</li>
+                <li>Access to monthly networking events</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>Listing in the business directory</li>
+                <li>Access to monthly networking events</li>
+                <li>10% discount on chamber event tickets</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silverModal">
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Free training workshops</li>
+                <li>Spotlight position on the home page</li>
+                <li>25% discount on chamber event tickets</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="goldModal">
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Priority spotlight on the home page</li>
+                <li>Free booth at the annual entrepreneurs fair</li>
+                <li>50% discount on chamber event tickets</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>Salt Lake City Chamber of Commerce</p>
+        <p>175 E 400 S, Salt Lake City, UT | info@slcchamber.example.com | +1 801 555-0123</p>
+        <p>&copy;<span id="currentyear"></span> &bull; Flavio Dias Martins Junior &bull; WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

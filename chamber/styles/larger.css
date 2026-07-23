@@ -43,6 +43,12 @@
         grid-template-columns: 2fr 3fr 1.5fr 2fr;
         align-items: center;
     }
+
+    /* join page: form left, cards on the right */
+    .join-grid {
+        grid-template-columns: 3fr 2fr;
+        align-items: start;
+    }
 }
 
 @media (min-width: 1025px) {

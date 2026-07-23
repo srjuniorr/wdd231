@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Salt Lake City Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying for a membership at the Salt Lake City Chamber of Commerce.">
+    <meta name="author" content="Flavio Dias Martins Junior">
+    <meta property="og:title" content="Thank You - Salt Lake City Chamber of Commerce">
+    <meta property="og:description" content="Membership application received.">
+    <meta property="og:image" content="https://srjuniorr.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://srjuniorr.github.io/wdd231/chamber/thankyou.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/favicon.svg" alt="chamber logo" width="44" height="44">
+            <span class="site-name">Salt Lake City<br>Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open the menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Thank You!</h1>
+        <p>Your membership application was received. We will contact you soon with the next steps.</p>
+
+        <div class="thanks-box">
+            <h2>Application Summary</h2>
+            <p><span class="field-name">First Name:</span> <span id="showFirstname"></span></p>
+            <p><span class="field-name">Last Name:</span> <span id="showLastname"></span></p>
+            <p><span class="field-name">Email:</span> <span id="showEmail"></span></p>
+            <p><span class="field-name">Mobile Phone:</span> <span id="showPhone"></span></p>
+            <p><span class="field-name">Business/Organization:</span> <span id="showOrganization"></span></p>
+            <p><span class="field-name">Application Date:</span> <span id="showTimestamp"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Salt Lake City Chamber of Commerce</p>
+        <p>175 E 400 S, Salt Lake City, UT | info@slcchamber.example.com | +1 801 555-0123</p>
+        <p>&copy;<span id="currentyear"></span> &bull; Flavio Dias Martins Junior &bull; WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -352,6 +352,166 @@ h2 {
     margin-top: 0.4rem;
 }
 
+/* join page form */
+.join-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+form.join-form {
+    background-color: var(--light-color);
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+form.join-form label {
+    display: block;
+    margin-bottom: 0.9rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+form.join-form input,
+form.join-form select,
+form.join-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-family: var(--font);
+    font-size: 1rem;
+}
+
+form.join-form input:required {
+    border-left: 4px solid var(--secondary-color);
+}
+
+form.join-form input:required:valid {
+    border-left: 4px solid #2d6a4f;
+}
+
+form.join-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+form.join-form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* membership cards */
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+.membership-cards h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.membership-card {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--light-color);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardIn 0.8s ease forwards;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+@keyframes cardIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card h3 {
+    margin: 0 0 0.5rem;
+    color: var(--primary-color);
+}
+
+.membership-card button {
+    font-family: var(--font);
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+
+.membership-card button:hover {
+    background-color: var(--primary-color);
+}
+
+dialog {
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 1.2rem;
+    max-width: 450px;
+}
+
+dialog::backdrop {
+    background-color: #00000080;
+}
+
+dialog h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+dialog button.close-modal {
+    font-family: var(--font);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+
+/* thank you page */
+.thanks-box {
+    background-color: var(--light-color);
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.thanks-box p {
+    margin: 0.4rem 0;
+}
+
+.thanks-box .field-name {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
 /* footer */
 footer {
     background-color: var(--primary-color);
