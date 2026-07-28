@@ -49,11 +49,36 @@
         grid-template-columns: 3fr 2fr;
         align-items: start;
     }
+
+    /* discover: medium layout with named areas */
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    /* image hover effect only on bigger screens */
+    .discover-card img:hover {
+        filter: saturate(1.6) brightness(1.05);
+        box-shadow: 0 4px 12px #0000004d;
+    }
 }
 
 @media (min-width: 1025px) {
 
     .members.grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* discover: large layout */
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card1 card2 card3"
+            "card4 card5 card6 card6"
+            "card7 card7 card8 card8";
     }
 }

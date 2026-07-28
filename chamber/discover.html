@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Salt Lake City Chamber of Commerce</title>
+    <meta name="description" content="Discover Salt Lake City: parks, museums, canyons and other places of interest in the area of the Salt Lake City Chamber of Commerce.">
+    <meta name="author" content="Flavio Dias Martins Junior">
+    <meta property="og:title" content="Discover - Salt Lake City Chamber of Commerce">
+    <meta property="og:description" content="Places of interest in the Salt Lake City area.">
+    <meta property="og:image" content="https://srjuniorr.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://srjuniorr.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/favicon.svg" alt="chamber logo" width="44" height="44">
+            <span class="site-name">Salt Lake City<br>Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open the menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Discover Salt Lake City</h1>
+
+        <div id="visit-message" class="visit-message"></div>
+
+        <p>Salt Lake City is the capital of Utah, home to around 200 thousand people in the city and more than a
+            million in the valley, surrounded by the Wasatch mountains. Check below some of the places our members
+            recommend for visitors.</p>
+
+        <div id="discover-grid" class="discover-grid"></div>
+    </main>
+
+    <footer>
+        <p>Salt Lake City Chamber of Commerce</p>
+        <p>175 E 400 S, Salt Lake City, UT | info@slcchamber.example.com | +1 801 555-0123</p>
+        <p>&copy;<span id="currentyear"></span> &bull; Flavio Dias Martins Junior &bull; WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

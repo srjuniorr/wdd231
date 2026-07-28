@@ -512,6 +512,95 @@ dialog button.close-modal {
     color: var(--primary-color);
 }
 
+/* discover page */
+.visit-message {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }
+
+.discover-card {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card h2 {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem 0;
+}
+
+.discover-card p {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.discover-card button {
+    font-family: var(--font);
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem;
+    margin: 0 1rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.discover-card button:hover {
+    background-color: var(--primary-color);
+}
+
 /* footer */
 footer {
     background-color: var(--primary-color);
