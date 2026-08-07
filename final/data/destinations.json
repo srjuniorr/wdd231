@@ -1,0 +1,148 @@
+{
+    "destinations": [
+        {
+            "name": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "region": "Southeast",
+            "type": "City",
+            "bestSeason": "December to March",
+            "description": "The most famous city in Brazil with Christ the Redeemer, Sugarloaf Mountain and the beaches of Copacabana and Ipanema.",
+            "image": "rio-de-janeiro.webp"
+        },
+        {
+            "name": "Iguazu Falls",
+            "state": "Parana",
+            "region": "South",
+            "type": "Nature",
+            "bestSeason": "March to May",
+            "description": "One of the largest waterfall systems in the world, with 275 falls on the border between Brazil and Argentina.",
+            "image": "iguazu-falls.webp"
+        },
+        {
+            "name": "Salvador",
+            "state": "Bahia",
+            "region": "Northeast",
+            "type": "City",
+            "bestSeason": "September to March",
+            "description": "The first capital of Brazil, famous for its colonial center Pelourinho, afro brazilian culture and carnival.",
+            "image": "salvador.webp"
+        },
+        {
+            "name": "Fernando de Noronha",
+            "state": "Pernambuco",
+            "region": "Northeast",
+            "type": "Beach",
+            "bestSeason": "August to December",
+            "description": "A volcanic archipelago with the best beaches in Brazil, crystal clear water and amazing diving spots.",
+            "image": "fernando-de-noronha.webp"
+        },
+        {
+            "name": "Chapada Diamantina",
+            "state": "Bahia",
+            "region": "Northeast",
+            "type": "Nature",
+            "bestSeason": "April to September",
+            "description": "A national park full of canyons, caves, natural pools and some of the highest waterfalls in the country.",
+            "image": "chapada-diamantina.webp"
+        },
+        {
+            "name": "Lencois Maranhenses",
+            "state": "Maranhao",
+            "region": "Northeast",
+            "type": "Nature",
+            "bestSeason": "June to September",
+            "description": "A unique desert landscape of white sand dunes filled with blue and green rain water lagoons.",
+            "image": "lencois-maranhenses.webp"
+        },
+        {
+            "name": "Amazon - Manaus",
+            "state": "Amazonas",
+            "region": "North",
+            "type": "Nature",
+            "bestSeason": "June to November",
+            "description": "The gateway to the Amazon rainforest, river cruises, jungle lodges and the meeting of the waters.",
+            "image": "amazon-manaus.webp"
+        },
+        {
+            "name": "Bonito",
+            "state": "Mato Grosso do Sul",
+            "region": "Center-West",
+            "type": "Nature",
+            "bestSeason": "December to March",
+            "description": "The capital of ecotourism in Brazil with transparent rivers for snorkeling, caves and waterfalls.",
+            "image": "bonito.webp"
+        },
+        {
+            "name": "Florianopolis",
+            "state": "Santa Catarina",
+            "region": "South",
+            "type": "Beach",
+            "bestSeason": "November to March",
+            "description": "An island city with more than 40 beaches, sand dunes, good seafood and a strong surf culture.",
+            "image": "florianopolis.webp"
+        },
+        {
+            "name": "Jericoacoara",
+            "state": "Ceara",
+            "region": "Northeast",
+            "type": "Beach",
+            "bestSeason": "July to December",
+            "description": "A small fishing village between dunes and the sea, famous for its sunsets and wind sports.",
+            "image": "jericoacoara.webp"
+        },
+        {
+            "name": "Ouro Preto",
+            "state": "Minas Gerais",
+            "region": "Southeast",
+            "type": "Historic",
+            "bestSeason": "April to September",
+            "description": "A colonial gold mining town preserved as a UNESCO world heritage site, full of baroque churches.",
+            "image": "ouro-preto.webp"
+        },
+        {
+            "name": "Paraty",
+            "state": "Rio de Janeiro",
+            "region": "Southeast",
+            "type": "Historic",
+            "bestSeason": "April to November",
+            "description": "A colonial coastal town with cobblestone streets, green islands and boat trips in calm waters.",
+            "image": "paraty.webp"
+        },
+        {
+            "name": "Pantanal",
+            "state": "Mato Grosso",
+            "region": "Center-West",
+            "type": "Nature",
+            "bestSeason": "July to October",
+            "description": "The largest wetland on the planet and the best place in Brazil to see wildlife like jaguars and giant otters.",
+            "image": "pantanal.webp"
+        },
+        {
+            "name": "Gramado",
+            "state": "Rio Grande do Sul",
+            "region": "South",
+            "type": "City",
+            "bestSeason": "June to August",
+            "description": "A mountain town with european style architecture, chocolate shops and a famous Christmas festival.",
+            "image": "gramado.webp"
+        },
+        {
+            "name": "Sao Paulo",
+            "state": "Sao Paulo",
+            "region": "Southeast",
+            "type": "City",
+            "bestSeason": "All year",
+            "description": "The biggest city in South America, with world class restaurants, museums, concerts and nightlife.",
+            "image": "sao-paulo.webp"
+        },
+        {
+            "name": "Recife and Olinda",
+            "state": "Pernambuco",
+            "region": "Northeast",
+            "type": "Historic",
+            "bestSeason": "September to March",
+            "description": "Twin cities with colorful colonial houses, urban beaches and one of the most traditional carnivals in Brazil.",
+            "image": "recife-olinda.webp"
+        }
+    ]
+}

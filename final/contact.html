@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Explore Brazil</title>
+    <meta name="description" content="Contact page of the Explore Brazil travel guide. Send questions or suggest a new destination for the guide.">
+    <meta name="author" content="Flavio Dias Martins Junior">
+    <meta property="og:title" content="Contact - Explore Brazil">
+    <meta property="og:description" content="Send questions or suggestions to the Explore Brazil travel guide.">
+    <meta property="og:image" content="https://srjuniorr.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://srjuniorr.github.io/wdd231/final/contact.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/contact.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/favicon.svg" alt="explore brazil logo" width="42" height="42">
+            <span>Explore Brazil</span>
+        </div>
+        <button id="menu" aria-label="Open the menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact</h1>
+        <p>Have a question about a destination or want to suggest a new place for the guide? Send a message.</p>
+
+        <form class="contact-form" method="get" action="form-action.html">
+            <label>Full Name
+                <input type="text" name="fullname" title="Your full name" autocomplete="name" required>
+            </label>
+
+            <label>Email
+                <input type="email" name="email" title="Your email address" autocomplete="email" placeholder="someone@example.com" required>
+            </label>
+
+            <label>Subject
+                <select name="subject" title="Choose a subject">
+                    <option value="question">Question about a destination</option>
+                    <option value="suggestion">Suggest a new destination</option>
+                    <option value="feedback">General feedback</option>
+                </select>
+            </label>
+
+            <label>Message
+                <textarea name="message" title="Write your message" rows="5" required></textarea>
+            </label>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+
+    <footer>
+        <p>Explore Brazil - Travel Guide</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p>&copy;<span id="currentyear"></span> &bull; Flavio Dias Martins Junior &bull; WDD 231 Final Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

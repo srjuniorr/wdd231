@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Explore Brazil</title>
+    <meta name="description" content="All the destinations of the Explore Brazil travel guide. Filter by region, open details and save your favorite places in Brazil.">
+    <meta name="author" content="Flavio Dias Martins Junior">
+    <meta property="og:title" content="Destinations - Explore Brazil">
+    <meta property="og:description" content="Browse the best travel destinations in Brazil by region.">
+    <meta property="og:image" content="https://srjuniorr.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://srjuniorr.github.io/wdd231/final/destinations.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/destinations.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/favicon.svg" alt="explore brazil logo" width="42" height="42">
+            <span>Explore Brazil</span>
+        </div>
+        <button id="menu" aria-label="Open the menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html" class="active">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Destinations</h1>
+        <p>Filter by region, open the details of each place and use the star to save your favorites.</p>
+
+        <div id="filters" class="filter-buttons">
+            <button data-region="all" class="active-filter">All</button>
+            <button data-region="North">North</button>
+            <button data-region="Northeast">Northeast</button>
+            <button data-region="Center-West">Center-West</button>
+            <button data-region="Southeast">Southeast</button>
+            <button data-region="South">South</button>
+            <button data-region="favorites">My Favorites</button>
+        </div>
+
+        <div id="dest-grid" class="dest-grid"></div>
+
+        <dialog id="destModal">
+            <div id="modalContent"></div>
+            <button id="closeModal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>Explore Brazil - Travel Guide</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p>&copy;<span id="currentyear"></span> &bull; Flavio Dias Martins Junior &bull; WDD 231 Final Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

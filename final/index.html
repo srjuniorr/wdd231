@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Brazil - Travel Guide</title>
+    <meta name="description" content="Explore Brazil is a travel guide with the best destinations in the country: beaches, nature, historic towns and big cities, with tips on the best season to visit.">
+    <meta name="author" content="Flavio Dias Martins Junior">
+    <meta property="og:title" content="Explore Brazil - Travel Guide">
+    <meta property="og:description" content="Discover the best travel destinations in Brazil.">
+    <meta property="og:image" content="https://srjuniorr.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://srjuniorr.github.io/wdd231/final/index.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/home.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/favicon.svg" alt="explore brazil logo" width="42" height="42">
+            <span>Explore Brazil</span>
+        </div>
+        <button id="menu" aria-label="Open the menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Explore Brazil</h1>
+
+        <div class="hero">
+            <img src="images/hero.webp" alt="a panorama of Rio de Janeiro with the bay and mountains" width="1200" height="500">
+            <a href="destinations.html" class="cta">See All Destinations</a>
+        </div>
+
+        <div class="intro-grid">
+            <section class="intro-card">
+                <h2>Why Brazil?</h2>
+                <p>Brazil is the fifth largest country in the world and has a bit of everything: tropical beaches,
+                    the biggest rainforest on the planet, historic colonial towns and modern cities full of life.</p>
+            </section>
+
+            <section class="intro-card">
+                <h2>When to Go</h2>
+                <p>The country is huge, so the best season changes from place to place. Each destination in our guide
+                    shows the best months to visit so you can plan the right trip.</p>
+            </section>
+
+            <section class="intro-card">
+                <h2>How this Guide Works</h2>
+                <p>Browse the destinations page, filter by region, open the details and mark your favorites with a
+                    star. Your favorites list is saved in your browser for the next visit.</p>
+            </section>
+        </div>
+
+        <h2>Featured Destinations</h2>
+        <div id="featured" class="dest-grid"></div>
+    </main>
+
+    <footer>
+        <p>Explore Brazil - Travel Guide</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p>&copy;<span id="currentyear"></span> &bull; Flavio Dias Martins Junior &bull; WDD 231 Final Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
